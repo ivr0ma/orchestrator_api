@@ -20,8 +20,8 @@ The `orchestrator_api` repository contains a set of services that work together 
 ├── start.sh                  # Script to start services
 ├── stop.sh                   # Script to stop services
 ├── README.md                 # Documentation for the repository
-├── todo-sqlite/              # Todo-SQLite service code
-├── short_url/                # Short URL service code
+├── todo_app/              # Todo-SQLite service code
+├── shorturl_app/                # Short URL service code
 └── orchestrator_api_interface/  # Unified interface code
 ```
 
