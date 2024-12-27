@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  todo-sqlite:
+    image: todo_sqlite:latest
+    container_name: todo_sqlite
+    networks:
+      - orchestrator_api_net
+    ports:
+      - "8000:80"
+    volumes:
+      - todo_data:/app/data
+
+  short_url:
+    image: short_url:latest
+    container_name: short_url
+    networks:
+      - orchestrator_api_net
+    ports:
+      - "8001:80"
+    volumes:
+      - shorturl_data:/app/data
+
+  orchestrator_api_interface:
+    image: orchestrator_api_interface:latest
+    container_name: orchestrator_api_interface
+    networks:
+      - orchestrator_api_net
+    ports:
+      - "8501:8501"
+
+networks:
+  orchestrator_api_net:
+    driver: bridge
+
+volumes:
+  todo_data:
+  shorturl_data:
+
+x-lifecycle:
+  auto-remove: true

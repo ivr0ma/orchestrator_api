@@ -1,0 +1,9 @@
+[submodule "todo_app"]
+	path = todo_app
+	url = https://github.com/ivr0ma/todo_app.git
+[submodule "shorturl_app"]
+	path = shorturl_app
+	url = https://github.com/ivr0ma/shorturl_app.git
+[submodule "orchestrator_api_interface"]
+	path = orchestrator_api_interface
+	url = https://github.com/ivr0ma/orchestrator_api_interface.git
