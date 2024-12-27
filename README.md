@@ -3,9 +3,9 @@
 ## Overview
 The `orchestrator_api` repository contains a set of services that work together to provide task management, URL shortening, and a unified interface for interacting with them. The services are deployed using Docker Compose and include the following:
 
-1. **Todo-SQLite**: A service for managing tasks.
-2. **Short URL**: A service for shortening URLs.
-3. **Orchestrator API Interface**: A Streamlit-based web interface to interact with the other services.
+1. **[Todo-SQLite API](https://github.com/ivr0ma/todo_app)**: A service for managing tasks.
+2. **[Short URL API](https://github.com/ivr0ma/shorturl_app)**: A service for shortening URLs.
+3. **[Orchestrator API Interface](https://github.com/ivr0ma/orchestrator_api_interface)**: A Streamlit-based web interface to interact with the other services.
 
 ## Prerequisites
 - **Git**: [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
@@ -61,5 +61,5 @@ Use the `stop.sh` script to stop and clean up services:
 - **[Short URL API](https://github.com/ivr0ma/shorturl_app)**:
   - Base URL: `http://localhost:8001`
   - Example: `POST /shorten`
-- **[Unified Interface](https://github.com/ivr0ma/orchestrator_api_interface)**:
+- **[Orchestrator API Interface](https://github.com/ivr0ma/orchestrator_api_interface)**:
   - URL: [http://localhost:8501](http://localhost:8501)
